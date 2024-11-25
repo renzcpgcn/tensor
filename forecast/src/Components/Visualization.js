@@ -32,10 +32,9 @@ import {
 } from 'recharts';
 
 const Visualization = ({ forecastResults }) => {
-  // Map the data into the desired format for the chart
   const chartData = forecastResults.map((result) => ({
-    month: `Month ${result.sales_date}`, // x-axis label
-    predictedSales: result.predicted_quantity, // Predicted sales
+    month: `Month ${result.sales_date}`, 
+    predictedSales: result.predicted_quantity,
   }));
 
   return (

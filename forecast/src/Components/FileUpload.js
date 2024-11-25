@@ -8,13 +8,13 @@ const FileUpload = ({ setRawData, setProductList }) => {
           header: true,
           skipEmptyLines: true,
           complete: (result) => {
-            console.log('Parsed Data:', result.data); // Log parsed data for debugging
+            console.log('Parsed Data:', result.data); 
             const data = result.data;
       
-            // Check for product_description column
+            
             if (data.length > 0 && data[0].product_description) {
               const products = Array.from(new Set(data.map((row) => row.product_description?.trim()))).filter(Boolean);
-              console.log('Extracted Products:', products); // Log extracted products
+              console.log('Extracted Products:', products); 
               setRawData(data);
               setProductList(products);
             } else {

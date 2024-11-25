@@ -11,7 +11,7 @@ const Preprocessing = ({ rawData, selectedProduct, setProcessedData }) => {
       quantity_sold: parseFloat(row.quantity_sold),
     }));
 
-    // Normalize quantity_sold
+    
     const maxQuantity = Math.max(...processedData.map((d) => d.quantity_sold));
     processedData.forEach((d) => (d.quantity_sold /= maxQuantity));
 
