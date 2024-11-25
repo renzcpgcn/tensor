@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import './styles/App.css';
+// import './App.css';
 import FileUpload from './Components/FileUpload';
 import ProductSelector from './Components/ProductSelector';
 import Preprocessing from './Components/Preprocessing';
